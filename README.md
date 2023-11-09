@@ -1,44 +1,43 @@
-# Analyse du Dataset Titanic en Python
+# Titanic Dataset Analysis in Python
 
-Ce référentiel contient un exemple d'analyse du dataset Titanic en utilisant Python, avec un accent particulier sur l'utilisation de bibliothèques telles que pandas, matplotlib, et seaborn. L'analyse comprend différentes étapes, de la lecture du dataset à la visualisation des données.
+This repository contains an example of Titanic dataset analysis using Python, with a particular focus on utilizing libraries such as pandas, matplotlib, and seaborn. The analysis includes various steps, from reading the dataset to visualizing the data.
 
-## Contenu
+## Contents
 
-- [Tâches à faire](#tâches-à-faire)
-- [Lire le dataset Titanic](#lire-le-dataset-titanic)
-  - [Affichage des premières lignes du dataframe](#affichage-des-premières-lignes-du-dataframe)
-  - [Afficher des dernières lignes du dataframe](#afficher-des-dernières-lignes-du-dataframe)
-  - [Affichage de la forme du DataFrame](#affichage-de-la-forme-du-dataframe)
-  - [Affichage des informations sur le DataFrame](#affichage-des-informations-sur-le-dataframe)
-  - [Vérification des valeurs manquantes](#vérification-des-valeurs-manquantes)
-  - [Statistiques descriptives](#statistiques-descriptives)
-  - [Les colonnes existantes](#les-colonnes-existantes)
-  - [Affichage des valeurs uniques dans les colonnes "Sex" et "Survived"](#affichage-des-valeurs-uniques-dans-les-colonnes-sex-et-survived)
+- [Tasks to Do](#tasks-to-do)
+- [Read the Titanic Dataset](#read-the-titanic-dataset)
+  - [Displaying the first lines of the dataframe](#displaying-the-first-lines-of-the-dataframe)
+  - [Displaying the last lines of the dataframe](#displaying-the-last-lines-of-the-dataframe)
+  - [Displaying the shape of the DataFrame](#displaying-the-shape-of-the-dataframe)
+  - [Displaying information about the DataFrame](#displaying-information-about-the-dataframe)
+  - [Checking for missing values](#checking-for-missing-values)
+  - [Descriptive statistics](#descriptive-statistics)
+  - [Existing columns](#existing-columns)
+  - [Displaying unique values in the "Sex" and "Survived" columns](#displaying-unique-values-in-the-sex-and-survived-columns)
   - [Cleaning data](#cleaning-data)
-- [Analyse de la corrélation entre les variables](#analyse-de-la-corrélation-entre-les-variables)
-  - [Dataset pour les survivants](#dataset-pour-les-survivants)
-  - [Dataset pour les non-survivants](#dataset-pour-les-non_survivants)
-  - [Diagramme en boîte des âges pour les survivants et les non-survivants](#diagramme-en-boîte-des-âges-pour-les-survivants-et-les-non-survivants)
-  - [Histogrammes de l'âge en fonction de "Survived"](#histogrammes-de-lâge-en-fonction-de-survived)
-  - [Histogramme des âges pour les survivants et les non-survivants](#histogramme-des-âges-pour-les-survivants-et-les-non-survivants)
-  - [Distribution de l'Âge en Fonction de la Survie](#distribution-de-lâge-en-fonction-de-la-survie)
-  - [Diagramme en barres pour le nombre de survivants par classe](#diagramme-en-barres-pour-le-nombre-de-survivants-par-classe)
-  - [Diagramme en barres pour le nombre de survivants par sexe](#diagramme-en-barres-pour-le-nombre-de-survivants-par-sex)
-  - [Visualisation en 3D](#visualisation-en-3d)
-  - [Création de DataFrames pour les Masculins et Féminins Survivants](#création-de-dataframes-pour-les-masculins-et-féminins-survivants)
-    - [Répartition de l'Âge des Masculins et des Femmes Survivants](#répartition-de-lâge-des-masculins-et-des-femmes-survivants)
+- [Analysis of the correlation between variables](#analysis-of-the-correlation-between-variables)
+  - [Dataset for survivors](#dataset-for-survivors)
+  - [Dataset for non-survivors](#dataset-for-non-survivors)
+  - [Box plot of ages for survivors and non-survivors](#box-plot-of-ages-for-survivors-and-non-survivors)
+  - [Histograms of age based on "Survived"](#histograms-of-age-based-on-survived)
+  - [Histogram of ages for survivors and non-survivors](#histogram-of-ages-for-survivors-and-non-survivors)
+  - [Distribution of Age based on Survival](#distribution-of-age-based-on-survival)
+  - [Bar plot for the number of survivors per class](#bar-plot-for-the-number-of-survivors-per-class)
+  - [Bar plot for the number of survivors by gender](#bar-plot-for-the-number-of-survivors-by-gender)
+  - [3D Visualization](#3d-visualization)
+  - [Creating DataFrames for Male and Female Survivors](#creating-dataframes-for-male-and-female-survivors)
+    - [Distribution of Age for Male and Female Survivors](#distribution-of-age-for-male-and-female-survivors)
 
-## Comment utiliser ce code
+## How to Use This Code
 
-1. [Téléchargez le dataset](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html) du Titanic.
-2. Chargez le dataset en utilisant la bibliothèque pandas.
-3. Exécutez chaque section du code pour effectuer l'analyse étape par étape.
+1. [Download the dataset](https://web.stanford.edu/class/archive/cs/cs109/cs109.1166/problem12.html) of the Titanic.
+2. Load the dataset using the pandas library.
+3. Execute each code section to perform the analysis step by step.
 
-## Dépendances
+## Dependencies
 
-Assurez-vous d'avoir installé les dépendances suivantes avant d'exécuter le code :
+Make sure you have installed the following dependencies before running the code:
 - pandas
 - matplotlib
 - seaborn
 - plotly
-
